@@ -44,8 +44,10 @@ public class ColorAdapter extends BaseAdapter {
         textView.setText(colors[position]);
         String chosenColor = colors[position];
 
+        if (colors[position] != "select") {
+            textView.setBackgroundColor(Color.parseColor(chosenColor));
+        }
 
-        textView.setBackgroundColor(Color.parseColor(chosenColor));
         //textView.setBackgroundColor(Color.WHITE);
         textView.setTextSize(40);
         textView.setTextColor(Color.GRAY);

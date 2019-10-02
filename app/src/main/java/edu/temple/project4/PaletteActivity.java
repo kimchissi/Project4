@@ -20,7 +20,7 @@ public class PaletteActivity extends AppCompatActivity {
 
         this.setTitle("Palette Activity");
 
-        String[] colors = {"red", "yellow", "green", "blue", "purple", "teal", "aqua", "fuchsia", "black", "white"};
+        String[] colors = {"select", "red", "yellow", "green", "blue", "purple", "teal", "aqua", "fuchsia", "black", "white"};
 
 
 
