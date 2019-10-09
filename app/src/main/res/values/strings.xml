@@ -15,4 +15,19 @@
         <item>black</item>
         <item>white</item>
     </string-array>
+    <string-array
+        name="color_hex_array">
+        <item>#ffffff</item>
+        <item>#FF0000</item>
+        <item>#FFFF00</item>
+        <item>#008000</item>
+        <item>#0000FF</item>
+        <item>#800080</item>
+        <item>#008080</item>
+        <item>#00FFFF</item>
+        <item>#FF00FF</item>
+        <item>#000000</item>
+        <item>#ffffff</item>
+    </string-array>
+    <string name="back_button">back</string>
 </resources>

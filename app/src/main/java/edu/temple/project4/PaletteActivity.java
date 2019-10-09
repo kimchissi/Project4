@@ -21,15 +21,15 @@ public class PaletteActivity extends AppCompatActivity {
 
         this.setTitle("Palette Activity");
         Resources res = this.getResources();
-        String[] colors = res.getStringArray(R.array.color_array);
+        final String[] colors = res.getStringArray(R.array.color_array);
         //String[] colors = {"select", "red", "yellow", "green", "blue", "purple", "teal", "aqua", "fuchsia", "black", "white"};
-
+        final String[] colorsHex = res.getStringArray(R.array.color_hex_array);
 
 
         final Spinner spinner = findViewById(R.id.colorSpinner);
 
 
-        final ColorAdapter adapter = new ColorAdapter(PaletteActivity.this, colors);
+        final ColorAdapter adapter = new ColorAdapter(PaletteActivity.this, colors, colorsHex);
 
         spinner.setAdapter(adapter);
 
@@ -42,7 +42,8 @@ public class PaletteActivity extends AppCompatActivity {
 
                     //adapter.getView(position, view, parent).setBackgroundColor(Color.WHITE);
                     Intent intent = new Intent(PaletteActivity.this, CanvasActivity.class);
-                    intent.putExtra("key", (parent.getSelectedItem().toString()));
+                    //intent.putExtra("key", (parent.getSelectedItem().toString()));
+                    intent.putExtra("key", colorsHex[parent.getSelectedItemPosition()]);
                     PaletteActivity.this.startActivity(intent);
                 }
 
