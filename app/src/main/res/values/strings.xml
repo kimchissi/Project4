@@ -1,4 +1,18 @@
 <resources>
     <string name="app_name">Project4</string>
     <string name="title_activity_canvas">CanvasActivity</string>
+    <string-array
+        name="color_array">
+        <item>select</item>
+        <item>red</item>
+        <item>yellow</item>
+        <item>green</item>
+        <item>blue</item>
+        <item>purple</item>
+        <item>teal</item>
+        <item>aqua</item>
+        <item>fuchsia</item>
+        <item>black</item>
+        <item>white</item>
+    </string-array>
 </resources>

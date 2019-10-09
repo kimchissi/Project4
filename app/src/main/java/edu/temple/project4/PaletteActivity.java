@@ -3,6 +3,7 @@ package edu.temple.project4;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -19,8 +20,9 @@ public class PaletteActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         this.setTitle("Palette Activity");
-
-        String[] colors = {"select", "red", "yellow", "green", "blue", "purple", "teal", "aqua", "fuchsia", "black", "white"};
+        Resources res = this.getResources();
+        String[] colors = res.getStringArray(R.array.color_array);
+        //String[] colors = {"select", "red", "yellow", "green", "blue", "purple", "teal", "aqua", "fuchsia", "black", "white"};
 
 
 
